@@ -9,7 +9,9 @@
 	 */
 
 	use Nihilarr\PTN;
+	use Moviescan\Input;
 	use Moviescan\Command;
+	use Moviescan\DiskCache;
 	use Moviescan\Verbosity;
 	use Moviescan\Filesystem;
 	use Moviescan\Environment;
