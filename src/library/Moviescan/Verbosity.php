@@ -79,7 +79,7 @@ namespace Moviescan {
 		 */
 		public static function getLevel() {
 			if(Command::getInstance()->getArgs()->getOpt("silent")) {
-				$verbose = self::QUIET;
+				$verbose = self::SILENT;
 			} else {
 				$verbose = Command::getInstance()->getArgs()->getOpt("verbose", 0);
 			}
