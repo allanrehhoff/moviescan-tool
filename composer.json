@@ -1,0 +1,26 @@
+{
+    "name": "rehhoff/moviescan",
+    "description": "A tool that helps you sort through your movie and series library and remove bad rated movies.",
+    "version": "1.0.0-alpha",
+    "type": "project",
+    "license": "MIT",
+    "config": {
+        "vendor-dir": "./src/vendor"
+    },
+    "scripts": {
+        "install-dev": "rm -rf ./src/vendor && php ~/bin/composer.phar install",
+        "install-prod": "rm -rf ./src/vendor && php ~/bin/composer.phar install --no-dev --optimize-autoloader"
+    },
+    "authors": [
+        {
+            "name": "Allan Thue Rehhoff",
+            "email": "allan.rehhoff@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=7.4",
+        "vanilla/garden-cli": "^3.1",
+        "nihilarr/parse-torrent-name": "^0.0.1"
+    }
+}
